@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-stone-50 text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-brand-600; }
+}
+@layer components {
+  .input { @apply w-full rounded-lg border border-stone-300 bg-white px-3 py-2.5 text-sm dark:border-stone-700 dark:bg-stone-900; }
+  .card { @apply rounded-2xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900; }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
